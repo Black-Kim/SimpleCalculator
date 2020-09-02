@@ -22,7 +22,7 @@ public class SimpleCalculator {
 		int cal = a.equals("+") ? num1 + num2 : 
 				(a.equals("-")? num1 - num2 :
 				(a.equals("*")? num1 * num2 : 
-				(a.equals("/")? num1 / num2 : 0)));
+				(a.equals("/")? Math.round((num1 / num2)*10.0)/10.0 : 0)));
 	    System.out.println("계산된 값은 "+cal+"입니다.");
 		
 		
